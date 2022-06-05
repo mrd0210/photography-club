@@ -1,7 +1,41 @@
 /*---------------------------------------tag selectors*/
+*{
+    max-width: 100vw;
+}
 
 body{
     font-family: 'Montserrat', sans-serif;
+    max-width: 100vw;
+}
+
+.flickity{
+    display: flex;
+    justify-content: center;
+}
+
+.carousel{
+   width: 100vw;
+    background: rgba(97, 221, 205, 0.301);
+} 
+/* Carosol ends */
+
+.carousel-cell a img{
+    width: 95vw;
+    height: 500px;
+}
+
+.Photography__Navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px 10px;
+}
+
+.Photography__links a{
+    text-decoration: none;
+}
+.carousel-item img{
     width: 100%;
 }
 
@@ -9,14 +43,49 @@ h1{
     font-family: 'Merriweather', serif;
     line-height: 2;
     font-weight: 900;
-    padding: 2rem;
 }
 
-/*---------------------------------------class selectors*/
+/*---------------------------------------class selectors-------------------------*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
+}
+
+.logo-name{
+    align-items: center;
+    display: flex;
+    max-width: 100vw;
+    background-image: url(img/Untitled\ design.jpg);
+    background-size: cover;
+    background-repeat: no-repeat    ;
+}
+
+.club-logo{
+    padding: 1rem;
+}
+
+.club-name{
+    padding-left: 3rem;
+}
+
+.club-contact{
+    padding-right: 2rem;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 600px) {
+    
+    .contact-logo{
+        width: 30px;
+    }
+    .club-contact{
+        padding-right: 0;
+    }
+}
+
+.nav-link{
+    margin: auto 3rem;
 }
 
 .home{
@@ -26,8 +95,8 @@ h1{
 
 .contact-logo{
     position: relative;
-    top: 50px;
-    width: 10%;
+    /* display: flex; */
+    width: 50px;
     margin: 5px;
     border-radius: 100%;
 }
@@ -37,8 +106,11 @@ h1{
 }
 
 .about-page{
+    width: 100%;
     margin:0px;
-    background-color:black;
+    background-image: url(img/MacBook\ Pro\ 16_\ -\ 26.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100%;
     padding: 2rem;
 }
@@ -47,12 +119,12 @@ h1{
     color: white;
     line-height: 2;
     text-align: justify;
-    width: 50%;
+    width: 60%;
     margin: auto 100px;
 }
 
 .about-pic{
-    margin: 100px 50px;
+    margin: 40px 50px;
     height:450px;
     width:300px;
     float:right;
@@ -63,92 +135,31 @@ h1{
     transform: scale(1.15);
 }
 
-.registration{
-    background-color: black;
-    text-align:center;
-    margin-top:0px;
-    padding:0px;
-    width:100%;
-    height:50px;
-}
+* { box-sizing: border-box; }
 
-.News h1{
-   text-align: center;
-   font-size: 2.5rem;
-   margin-top: 20px;
-   margin-bottom: 40px;
-}
+body { font-family: sans-serif; }
 
-.News__Section{
+.Flickty{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0 50px;
-}
-
-.News__Lines{
-   display: flex;
-   flex-direction: column;
-
-}
-.NewsHeadings{
-    list-style-type: none;  
-}
-.news{
-    margin: 10px 0;
-}
-
-.News__EventCards{
-    display: flex;
-    justify-content: space-around;
-    width: 50vw;
-    margin: 50px auto;
-}
-
-.News__EventCard img{
-    width: 300px;
-    height: 400px;
-}
-.News__EventCard:hover{
-    transition: all 1s ease;
-    transform: scale(1.15);
-}
-
-@media screen and (max-width:1300px){
-    .News__Section{
-        padding: 0 20px;
-    }
-    .News__EventCard,.News__EventCard img{
-        width: 250px;
-        height: 350px;
-    }
-}
-
-@media screen and (max-width:1100px){
-   
-  .News__Section{
-      flex-direction: column;
-  }
- .News__MainEvents{
-      margin-top: 50px;
-  }
-   .News__EventCards{
-    justify-content: space-around;
     width: 100vw;
-
-   } 
+    justify-content: center;
 }
-
-@media screen and (max-width:600px){
-    .News__Lines{
-       height: 200px; 
-    }
-    .News__EventCard,.News__EventCard img{
-        width: 40vw;
-    } 
+.carousel {
+    width: 50vw;
+  background: #EEE;
 }
 
 
+.carousel-cell {
+  width: 80vw;
+  height: auto;
+  border-radius: 5px;
+}
+
+.carousel-cell a img{
+    width: 25vw;
+    padding: 0 20px;
+}
 
 *{
     margin: 0;padding: 0;box-sizing: border-box;
@@ -181,7 +192,7 @@ h1{
     align-items: center;
     width: 25vw;
     margin: 20px 10px;
-    background: darkslategray;
+    background: #211F24;
     position: relative;
     display: none;
 }
@@ -231,8 +242,7 @@ color: #fff;
     display: flex;
     align-items: center;
     text-align: center;
-    border: 2px solid #fff;
-    background: red;
+    background: #211F24;
     height: 30px;
     color: #fff;
     margin: 10px auto;
@@ -443,11 +453,21 @@ color: #fff;
 }
 
 .contact-us{
+    align-items: center;
     background-color: #000;
     color: white;
     font-family: 'Montserrat', sans-serif;
     width: 100%;
-    height: 3rem;
+    height: 30vh;
+}
+
+.contactus-logo:hover{
+    transition: all 1s ease;
+    transform: scale(1.15);
+}
+
+.copyright{
+    font-weight: bold;
 }
 
 
